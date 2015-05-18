@@ -91,73 +91,111 @@ window.onload = function() {
 <div>OpenStreetMap is the <a href="https://www.google.com/search?q=%22wikipedia+of+maps%22">"Wikipedia of maps"</a></div>
 <div><img src="atx_osm.png"></div>
 <div>map of the planet</div>
-<div>free to edit</div>
+<div>free to <a href="http://osmlab.github.io/show-me-the-way/">edit</a></div>
 <div>free to use</div>
 
-<div>this enables lots of cool things</div>
+
+<div>enables cool things</div>
 <div><img src="atx-mapquest.png"></div>
 <div><img src="atx-positron-darkmatter.png"></div>
-<div><img src="atx-mapbox-studio-streets.png"></div>
 <div><img src="atx-mapbox-studio-rendered.png"></div>
+<div><img src="atx-mapbox-studio-streets.png"></div>
+<div><img src="atx-mapzen-crosshatch.png"></div>
+<div><img src="atx-mapzen-matrix.png"></div>
+<div><a href="https://tangrams.github.io/tangram-sandbox/tangram.html?styles/matrix.yaml#16.99751/30.27343/-97.73658">link</a></div>
 
-<div>OSM also saves lives</div>
+
+<div>Humanitarian OpenStreetMap</div>
 <div><img src="hot-website.png"></div>
-<div><img src="Guekedou-before.png"></div>
-<div><img src="Guekedou-progress.png"></div>
-<div><img src="Guekedou-today.png"></div>
-<div><img src="Ebola_Outbreak_changesets_vis.png"></div>
+<div><img src="nepal-hotosm-task-manager.png"></div>
+<div><img src="mapbox-nepal-first-three-days-edits.gif"></div>
+<div><img src="nepal-canadian-rescue-map.png"></div>
 
 
-<div>you can download OSM data and do your own cool, life-saving things</div>
+<div>using OpenStreetMap</div>
 <div>OSM is licensed under the Open Database License: <a href="http://opendatacommons.org/licenses/odbl/">ODbL</a></div>
 <div>TL;DR free to share, create, adapt as long as you <em>attribute</em> and <em>share-alike</em></div>
 
-<div>you can download the whole <a href=""></a>planet file</div>
-<div>but it is huge (~25GB in super-compressed form)</div>
+<div>you can download the whole <a href="http://planet.openstreetmap.org/">planet file</a></div>
+<div>but it is huge (~28GB in super-compressed form)</div>
 
-<div>metro and country-level extracts are available</div>
-<div>lots of tools for import to databases, shapefiles, etc</div>
+<div>smaller extracts are available for metro areas and countries</div>
+<div>lots of tools to import OSM into databases, shapefiles, etc</div>
+
+
 
 <div>data model?</div>
-<div>only three parts</div>
-<div>nodes / ways / relations <img src="node-way-relation.png"></div>
-<div>nodes are points</div>
-<div>ways are connected sets of points: lines, polygons</div>
-<div>relations attach meaningful information to nodes and ways</div>
+<div>(<em>nodes</em> / <em>ways</em> / <em>relations</em>) + <em>tags</em></div>
+
+<div><em>tags</em> are key-value pairs that describe what something is</div>
+<div>free-form, but <a href="http://wiki.openstreetmap.org/wiki/Map_Features">conventions</a> exist and should be used</div>
+<div><em>tags</em> can be attached to <em>nodes</em>, <em>ways</em>, and <em>relations</em></div>
+<div><img src="atx-brackenridge-hospital-tags.png"></div>
+
+<div><em>nodes</em> are single points</div>
+<div>they can stand alone</div>
+<div><img src="atx-tree.png"></div>
+<div><img src="atx-drinking-fountain.png"></div>
+<div><img src="atx-toilets.png"></div>
+<div><img src="atx-fast-folks.png"></div>
+
+<div><em>nodes</em> can be connected to form <em>ways</em> (lines or polygons in traditional GIS)</div>
+<div><em>ways</em> always have direction - sometimes direction is meaningful</div>
+<div><img src="atx-waller-creek.png"></div>
+<div><img src="atx-east-5th.png"></div>
+<div><img src="atx-east-5th-bridge.png"></div>
+<div><img src="atx-hilton-garden-inn.png"></div>
+<div><img src="atx-landuse-commercial.png"></div>
+
+<div><em>relations</em> are collections of <em>nodes</em>, <em>ways</em> and <em>other relations</em></div>
+<div><em>relations</em> are not exclusive - something can be part of any number of relations</div>
+<div>a <em>relation</em> can contain nodes, ways, and relations at the same time</div>
+<div><img src="atx-relation-I35-segment.png"></div>
+<div><img src="atx-relation-I35.png"></div>
 
 
-<div>where do we start?</div>
-<div style="color: black"><img src="signup.png">sign up <a href="https://www.openstreetmap.org/user/new">here!</a></div>
+
+<div>how to edit?</div>
+<div style="color: black"><img src="signup.png">create an <a href="https://www.openstreetmap.org/user/new">account</a></div>
 
 <div>two ways to make digital edits: web editor <a href="https://wiki.openstreetmap.org/wiki/ID">iD</a> or advanced editor <a href="https://josm.openstreetmap.de/">JOSM</a></div>
-<div style="color: black"><img src="atx-iD-capitol.png"></div>
-<div><img src="sf_cityhall_editing_josm.png"></div>
-
+<div><img src="atx-iD-capitol.png"></div>
+<div><img src="atx-capitol-josm.png"></div>
 <div><img src="pushpin.png">you can also go outside</div>
 <div><img src="fieldpapers.png"></div>
 <div><img src="field-paper-3.png"></div>
+<div>demo</div>
 
-<div>bulk importing data is good, too</div>
-<div>it's complicated though: <a href="http://wiki.openstreetmap.org/wiki/Import/Guidelines">wiki.osm.org / wiki / Import / Guidelines</a></div>
-<div>get feedback before you import anything!</div>
+
+<div>importing from other sources is good too</div>
+<div><img src="there-are-rules.png"></div>
+
+<div><a href="http://wiki.openstreetmap.org/wiki/Import/Guidelines">wiki.osm.org / wiki / Import / Guidelines</a></div>
+<div>respect copyright and data license</div>
+<div>data source must be allowed to be redistributed under Open Database License</div>
+<div>document the import process</div>
+<div>get feedback before you import anything</div>
+
 <div>which leads me to....</div>
-<div>city of austin buildings dataset</div>
-<div><img src="atx-buildings-close.png"></div>
-<div><img src="atx-buildings-med.png"></div>
-<div><img src="atx-buildings-all.png"></div>
-<div>all those buildings yearning to be free</div>
-<div><em>status:</em> waiting for official word on data license</div>
+<div>city of austin data</div>
+<div><img src="atx-osm-buildings.png"></div>
+<div><img src="atx-coa-buildings.png"></div>
+<div>approx. 575000 buildings to import</div>
+<div>address points, too</div>
 
-<div>helpful links</div>
-<div>learn about OSM: <a href="http://learnosm.org">www.learnosm.org</a> <a href="http://wiki.openstreetmap.org">wiki.osm.org</a> <a href="http://help.openstreetmap.org">help.osm.org</a></div>
-<div>how to add any kind of thing to the map: <a href="http://wiki.openstreetmap.org/wiki/Map_Features">wiki.osm.org / wiki / Map_Features</a></div>
-<div>am I doing this <em>right?</em> <a href="http://wiki.openstreetmap.org/wiki/Good_practice">wiki.osm.org / wiki / Good_practice</a></div>
+<div>want to help?</div>
+<div><em>status:</em> in planning / data prep</div>
+<div>data is in the Public Domain</div>
+<div>...but maybe not?</div>
+<div>we need to clear that up ASAP</div>
+<div>some technical data munging to do (OSM)</div>
+<div>submit plan and get approval from OSM import team</div>
+<div>then import party!</div>
 
-<div>some other neat things</div>
-<div>play <a href="http://maproulette.org">MapRoulette</a></div>
-<div><img src="maproulette.png"></div>
-<div><a href="http://osmlab.github.io/show-me-the-way/">real-time edits</a></div>
+<div>who's with me?</div>
+<div>but srsly, need to figure out the license situation</div>
 
-<div>This presentation was adapted (ripped off) from Maptime <a href="https://github.com/maptime/osm-101">OSM 101</a></div>
 
 <div>Thanks!</div>
+<div>This presentation was adapted (ripped off) from Maptime <a href="https://github.com/maptime/osm-101">OSM 101</a></div>
+
